@@ -81,7 +81,7 @@ public class CustAccount extends Account {
         if(flag==1) {
             List<String> operationRecod = getOperationRecod();
             operationRecod.add("【" + LocalDateTime.now().format(dateTimeFormatter) + "】 ATM 存款 [" + money + "]元，当前余额[" + this.balance + "]元");
-            
+
             JOptionPane.showMessageDialog(null, "存款成功！", "提示消息", JOptionPane.WARNING_MESSAGE);
         }
         return true;
